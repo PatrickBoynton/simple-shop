@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'rest_auth.registration',
     # Installed apps.
     'product.apps.ProductConfig',
+    'cart.apps.CartConfig',
     'accounts.apps.AccountsConfig',
     'frontend.apps.FrontendConfig',
     'wishlist.apps.WishlistConfig',
