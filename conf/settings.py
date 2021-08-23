@@ -122,12 +122,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-# AUTH_USER_MODEL = 'accounts.CustomUser'
+AUTH_USER_MODEL = 'accounts.'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = os.path.join(BASE_DIR, 'media/')
-# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'frontend/build/static'),)
-# REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend/static')
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'frontend/build/static'),)
+REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend/static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 SITE_ID = 1
