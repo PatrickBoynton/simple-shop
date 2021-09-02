@@ -13,6 +13,7 @@ form {
 
 label {
     text-align: center;
+    margin-bottom: 3px;
 }
 
 input {
@@ -20,6 +21,13 @@ input {
     font-size: 1.6rem;
     border: 2px solid #000;
     border-radius: 6px;
+}
+
+textarea {
+    border: 2px solid #000;
+    margin-bottom: 1.3rem;
+    border-radius: 6px;
+    font-size: 1.6rem;
 }
 
 button {
