@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './CreateProduct.css';
 
-const CreateProduct = () => {
+const CreateProduct: FC = () => {
     return <form>
         <label htmlFor="title">Title</label>
         <input type="text" name="title"/>

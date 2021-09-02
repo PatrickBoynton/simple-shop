@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const Wishlist = () => {
+const Wishlist: FC = () => {
     return <div>Wishlist!</div>;
 };
 
