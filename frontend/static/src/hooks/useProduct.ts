@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import { IProduct } from '../models/IProduct';
 
-export const useFetchProducts = () => {
+export const useFetchProducts = (url: string) => {
     const [products, setProducts] = useState<IProduct[]>([]);
 
     const fetchProducts = async (url: string): Promise<void> => {
@@ -11,7 +11,7 @@ export const useFetchProducts = () => {
     };
 
     useEffect(() => {
-        fetchProducts('/api/v1/product/');
-    }, []);
+        fetchProducts(url);
+    }, [url]);
     return products;
 }
